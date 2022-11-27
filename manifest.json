@@ -1,0 +1,10 @@
+{
+    "name": "CS4501 AdBlocker Chrome Extension",
+    "version": "1.0",
+    "description": "CS4501 AdBlocker Chrome Extension",
+    "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "manifest_version": 2
+}
