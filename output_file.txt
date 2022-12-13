@@ -1,5 +1,4 @@
-url_list = [
-    '*://*.0-000.store/*',
+'*://*.0-000.store/*',
 '*://*.004809f9da.com/*',
 '*://*.00aaa2d81c1d174.com/*',
 '*://*.0111d594c7.com/*',
@@ -25957,11 +25956,3 @@ url_list = [
 '*://*.ytre9jk.txxx.com/*',
 '*://*.thegay.com/*',
 '*://*.icepbns.com/*',
-]
-chrome.webRequest.onBeforeRequest.addListener(
-    function (details) {
-        return { cancel: true };
-    },
-    { urls: url_list },
-    ["blocking"]
-);
