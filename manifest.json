@@ -2,9 +2,12 @@
     "name": "CS4501 AdBlocker Chrome Extension",
     "version": "1.0",
     "description": "CS4501 AdBlocker Chrome Extension",
-    "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+    "permissions": ["webRequest", "webRequestBlocking", "<all_urls>", "activeTab", "storage"],
     "background": {
         "scripts": ["background.js"]
     },
-    "manifest_version": 2
+    "manifest_version": 2,
+    "action": {
+        "default_title": "Click to turn on ad block"
+    }
 }
