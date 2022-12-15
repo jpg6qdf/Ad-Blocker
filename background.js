@@ -15,7 +15,6 @@ async function fetchData() {
     }
     chrome.webRequest.onBeforeRequest.addListener(
         function(details) { 
-            console.log(url_list);
             return {cancel: true}; 
         },
         { urls: url_list },
